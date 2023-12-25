@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageVersion Include="MQTTnet" Version="4.3.3.952" />
+    <PackageVersion Include="MQTTnet.Extensions.ManagedClient" Version="4.3.3.952" />
+    <PackageVersion Include="Ulid" Version="1.3.3" />
+    <PackageVersion Include="WPF-UI" Version="3.0.0-preview.13" />
+    <PackageVersion Include="Wpf.Extensions.Hosting" Version="1.1.2" />
+    <PackageVersion Include="ZLogger" Version="2.1.0" />
+  </ItemGroup>
+</Project>

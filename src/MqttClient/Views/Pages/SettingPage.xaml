@@ -1,0 +1,49 @@
+﻿<Page x:Class="MqttClient.Views.Pages.SettingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:pages="clr-namespace:MqttClient.Views.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="SettingPage"
+      Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Auto"
+          ScrollViewer.HorizontalScrollBarVisibility="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <ui:TextBlock Grid.Column="0"
+                      Grid.Row="0"
+                      Text="アプリケーションテーマ"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Left"
+                      Margin="5" />
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="0"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Right"
+                  Margin="5">
+            <ComboBoxItem>
+                <ui:TextBlock Text="システム" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <ui:TextBlock Text="ライト" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <ui:TextBlock Text="ダーク" />
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>
+
